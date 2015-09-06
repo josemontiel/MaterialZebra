@@ -7,6 +7,7 @@
     android:layout_marginTop="4dp"
     android:layout_marginBottom="4dp"
     android:elevation="2dp"
+    app:cardPreventCornerOverlap="false"
     android:translationZ="6dp"
     android:clickable="true"
     android:focusable="true"

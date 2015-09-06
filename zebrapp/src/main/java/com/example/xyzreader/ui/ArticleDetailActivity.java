@@ -67,6 +67,11 @@ public class ArticleDetailActivity extends AppCompatActivity {
         if(fab != null) {
             fab.setVisibility(View.GONE);
         }
+
+        View cover = findViewById(R.id.detail_cover);
+        if(cover != null){
+            cover.setVisibility(View.INVISIBLE);
+        }
         supportFinishAfterTransition();
     }
 }

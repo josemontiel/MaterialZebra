@@ -174,6 +174,7 @@ public class ArticleDetailFragment extends Fragment implements
         switch (id){
             case android.R.id.home:
                 mRootView.findViewById(R.id.share_fab).setVisibility(View.GONE);
+                mPhotoView.setVisibility(View.INVISIBLE);
                 getActivity().supportFinishAfterTransition();
                 return true;
         }
