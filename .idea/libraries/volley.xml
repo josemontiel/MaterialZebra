@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="volley">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/MaterialZebra/libs/volley.jar!/" />
+      <root url="jar://$PROJECT_DIR$/zebrapp/libs/volley.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
