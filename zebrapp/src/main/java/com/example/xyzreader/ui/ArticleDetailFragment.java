@@ -173,6 +173,7 @@ public class ArticleDetailFragment extends Fragment implements
         int id = item.getItemId();
         switch (id){
             case android.R.id.home:
+                mRootView.findViewById(R.id.share_fab).setVisibility(View.GONE);
                 getActivity().supportFinishAfterTransition();
                 return true;
         }

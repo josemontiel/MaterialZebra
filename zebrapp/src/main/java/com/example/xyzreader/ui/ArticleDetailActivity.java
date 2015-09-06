@@ -56,9 +56,17 @@ public class ArticleDetailActivity extends AppCompatActivity {
         ArticleDetailFragment detailFragment =
                 ArticleDetailFragment.newInstance(mStartId);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, detailFragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, detailFragment, "detail").commit();
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
 
-
+        View fab = findViewById(R.id.share_fab);
+        if(fab != null) {
+            fab.setVisibility(View.GONE);
+        }
+        supportFinishAfterTransition();
+    }
 }
